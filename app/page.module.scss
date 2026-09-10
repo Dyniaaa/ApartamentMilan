@@ -579,7 +579,9 @@
   .header {
     height: 76px;
   }
-  .desktopNav,
+  .desktopNav {
+    display: none;
+  }
   .menuButton {
     display: grid;
     gap: 5px;
