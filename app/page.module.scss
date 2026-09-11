@@ -33,9 +33,9 @@
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   color: inherit;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.16em;
   line-height: 1.2;
@@ -43,12 +43,12 @@
 }
 .brand strong {
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   border: 1px solid currentColor;
   border-radius: 50%;
-  font-size: 11px;
+  font-size: 17px;
   letter-spacing: 0;
 }
 .desktopNav {
@@ -578,6 +578,15 @@
 @media (max-width: 800px) {
   .header {
     height: 76px;
+  }
+  .brand {
+    gap: 11px;
+    font-size: 10px;
+  }
+  .brand strong {
+    width: 39px;
+    height: 39px;
+    font-size: 15px;
   }
   .desktopNav {
     display: none;
