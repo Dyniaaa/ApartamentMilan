@@ -6,12 +6,12 @@ import styles from "./page.module.scss";
 
 const images = [
   {
-    src: "/Salon4.jpg",
+    src: "/Salon1.jpg",
     alt: "Jasny salon apartamentu",
     label: "Salon",
   },
   {
-    src: "/Salon3.jpg",
+    src: "/Sypialnia1.jpg",
     alt: "Nowoczesna sypialnia",
     label: "Sypialnia",
   },
@@ -25,11 +25,6 @@ const images = [
     alt: "Elegancka łazienka",
     label: "Łazienka",
   },
-  {
-    src: "/Balkon1.jpg",
-    alt: "Strefa wypoczynku",
-    label: "Wypoczynek",
-  },
 ];
 const navLinks = [
   ["O apartamencie", "about"],
@@ -42,9 +37,7 @@ const amenities = [
   "Bezpłatny parking",
   "W pełni wyposażona kuchnia",
   "Pralka",
-  "2 piętro z windą",
   "Balkon z widokiem",
-  "Pościel",
   "Smart TV",
 ];
 
@@ -200,7 +193,12 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.featureImage}>
-        <Image src={images[1].src} alt={images[1].alt} fill sizes="100vw" />
+        <Image
+          src="/Salon3.jpg"
+          alt="Salon apartamentu"
+          fill
+          sizes="100vw"
+        />
         <div>
           <span>01</span>
           <p>
@@ -238,7 +236,7 @@ export default function Home() {
         <div className={styles.galleryGrid}>
           {images.map((image, index) => (
             <button
-              className={`${styles.galleryItem} ${index === 0 ? styles.galleryLarge : ""}`}
+              className={styles.galleryItem}
               key={image.src}
               onClick={() => setLightbox(index)}
             >
@@ -281,11 +279,19 @@ export default function Home() {
       <section className={styles.contactStrip} id="contact">
         <div>
           <span className={styles.contactLabel}>05 / Kontakt</span>
-          <h2>Masz pytania?<br /><em>Jesteśmy tutaj.</em></h2>
+          <h2>
+            Masz pytania?
+            <br />
+            <em>Jesteśmy tutaj.</em>
+          </h2>
         </div>
         <div className={styles.contactLinks}>
-          <a href="mailto:apartamentyuchnasta3@gmail.com">apartamentyuchnasta3@gmail.com <span>↗</span></a>
-          <a href="tel:+48884875800">+48 884 875 800 <span>↗</span></a>
+          <a href="mailto:apartamentyuchnasta3@gmail.com">
+            apartamentyuchnasta3@gmail.com <span>↗</span>
+          </a>
+          <a href="tel:+48884875800">
+            +48 884 875 800 <span>↗</span>
+          </a>
           <p>ul. Waryńskiego 52, Busko-Zdrój</p>
         </div>
       </section>
